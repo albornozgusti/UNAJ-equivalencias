@@ -2,7 +2,54 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  background: #0f0f0f;
+  color: #e0e0e0;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: calc(100vh - 120px);
+}
+
+.App > div {
+  padding: 1.5rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #1a1a1a;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.App h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #e0e0e0;
+  text-align: left;
+}
+
+.App > div:first-child p {
+  text-align: left;
+  color: #b0b0b0;
+}
+
+.item-strikethrough {
+  opacity: 0.6;
+  text-decoration: line-through;
+  color: #666;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #e0e0e0;
 }
 
 .logo {

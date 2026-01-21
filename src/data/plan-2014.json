@@ -1,0 +1,401 @@
+{
+  "carrera": "Ingeniería en Informática",
+  "institucion": "Universidad Nacional Arturo Jauretche",
+  "plan_estudios": [
+    {
+      "anio": "Primer Año",
+      "cuatrimestres": [
+        {
+          "periodo": "1er. Cuatrimestre",
+          "asignaturas": [
+            {
+              "codigo": "C1021",
+              "nombre": "Taller de Ingeniería",
+              "carga_horaria_semanal": 4,
+              "correlativas": null
+            },
+            {
+              "codigo": "C1003",
+              "nombre": "Prácticas Culturales",
+              "carga_horaria_semanal": 4,
+              "correlativas": null
+            },
+            {
+              "codigo": "C1009",
+              "nombre": "Sistemas de Representación",
+              "carga_horaria_semanal": 4,
+              "correlativas": null
+            },
+            {
+              "codigo": "CI002",
+              "nombre": "Matemática",
+              "carga_horaria_semanal": 4,
+              "correlativas": null
+            }
+          ]
+        },
+        {
+          "periodo": "2do. Cuatrimestre",
+          "asignaturas": [
+            {
+              "codigo": "C1001",
+              "nombre": "Taller de lectura y escritura",
+              "carga_horaria_semanal": 4,
+              "correlativas": null
+            },
+            {
+              "codigo": "C1010",
+              "nombre": "Fundamentos de Informática",
+              "carga_horaria_semanal": 6,
+              "correlativas": null
+            },
+            {
+              "codigo": "C1004",
+              "nombre": "Problemas de Historia Argentina",
+              "carga_horaria_semanal": 4,
+              "correlativas": null
+            },
+            {
+              "codigo": "CI012",
+              "nombre": "Matemática I",
+              "carga_horaria_semanal": 9,
+              "correlativas": "C1002"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "anio": "Segundo Año",
+      "cuatrimestres": [
+        {
+          "periodo": "1er. Cuatrimestre",
+          "asignaturas": [
+            {
+              "codigo": "CI022",
+              "nombre": "Matemática II",
+              "carga_horaria_semanal": 9,
+              "correlativas": "CI012"
+            },
+            {
+              "codigo": "13001",
+              "nombre": "Algoritmos y Programación",
+              "carga_horaria_semanal": 4,
+              "correlativas": "C1010"
+            },
+            {
+              "codigo": "13002",
+              "nombre": "Organización y Arquitectura de Computadoras",
+              "carga_horaria_semanal": 7,
+              "correlativas": "C1010"
+            },
+            {
+              "codigo": "13003",
+              "nombre": "Sistemas Operativos I",
+              "carga_horaria_semanal": 4,
+              "correlativas": "CI010"
+            }
+          ]
+        },
+        {
+          "periodo": "2do. Cuatrimestre",
+          "asignaturas": [
+            {
+              "codigo": "CI025",
+              "nombre": "Física I",
+              "carga_horaria_semanal": 9,
+              "correlativas": "CI012"
+            },
+            {
+              "codigo": "CI026",
+              "nombre": "Matemática III",
+              "carga_horaria_semanal": 6,
+              "correlativas": "C1022"
+            },
+            {
+              "codigo": "13004",
+              "nombre": "Complejidad Temporal, Estructuras de Datos y Algoritmos",
+              "carga_horaria_semanal": 4,
+              "correlativas": "13001"
+            },
+            {
+              "codigo": "13005",
+              "nombre": "Bases de Datos I",
+              "carga_horaria_semanal": 5,
+              "correlativas": "C1010"
+            },
+            {
+              "codigo": "13006",
+              "nombre": "Redes de Computadoras I",
+              "carga_horaria_semanal": 3,
+              "correlativas": "13002"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "anio": "Tercer Año",
+      "cuatrimestres": [
+        {
+          "periodo": "1er. Cuatrimestre",
+          "asignaturas": [
+            {
+              "codigo": "CI027",
+              "nombre": "Física II",
+              "carga_horaria_semanal": 9,
+              "correlativas": "CI022-C1025"
+            },
+            {
+              "codigo": "13007",
+              "nombre": "Metodología de Programación I",
+              "carga_horaria_semanal": 5,
+              "correlativas": "13001"
+            },
+            {
+              "codigo": "13008",
+              "nombre": "Información y Comunicaciones",
+              "carga_horaria_semanal": 5,
+              "correlativas": "13002"
+            },
+            {
+              "codigo": "13009",
+              "nombre": "Ingeniería de Software I",
+              "carga_horaria_semanal": 5,
+              "correlativas": "13004"
+            },
+            {
+              "codigo": "13010",
+              "nombre": "Redes de Computadoras II",
+              "carga_horaria_semanal": 3,
+              "correlativas": "13006"
+            }
+          ]
+        },
+        {
+          "periodo": "2do. Cuatrimestre",
+          "asignaturas": [
+            {
+              "codigo": "C1029",
+              "nombre": "Probabilidad y Estadística",
+              "carga_horaria_semanal": 5,
+              "correlativas": "C1022"
+            },
+            {
+              "codigo": "13011",
+              "nombre": "Proyecto Software",
+              "carga_horaria_semanal": 6,
+              "correlativas": "13006, 13007"
+            },
+            {
+              "codigo": "CI011",
+              "nombre": "Química General",
+              "carga_horaria_semanal": 6,
+              "correlativas": "CI012, C1025"
+            },
+            {
+              "codigo": "13012",
+              "nombre": "Metodologías de Programación II",
+              "carga_horaria_semanal": 6,
+              "correlativas": "13007"
+            },
+            {
+              "codigo": "13013",
+              "nombre": "Seguridad de la Información",
+              "carga_horaria_semanal": 4,
+              "correlativas": "13001, 13006"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "anio": "Cuarto Año",
+      "cuatrimestres": [
+        {
+          "periodo": "1er. Cuatrimestre",
+          "asignaturas": [
+            {
+              "codigo": "13014",
+              "nombre": "Bases de Datos II",
+              "carga_horaria_semanal": 6,
+              "correlativas": "13005"
+            },
+            {
+              "codigo": "13015",
+              "nombre": "Ingeniería de Software II",
+              "carga_horaria_semanal": 6,
+              "correlativas": "13009"
+            },
+            {
+              "codigo": "13016",
+              "nombre": "Sistemas Operativos II",
+              "carga_horaria_semanal": 5,
+              "correlativas": "13003"
+            },
+            {
+              "codigo": "13017",
+              "nombre": "Seguridad en Aplicaciones",
+              "carga_horaria_semanal": 4,
+              "correlativas": "13013"
+            },
+            {
+              "codigo": "13018",
+              "nombre": "Aplicaciones Móviles",
+              "carga_horaria_semanal": 6,
+              "correlativas": "13011"
+            }
+          ]
+        },
+        {
+          "periodo": "2do. Cuatrimestre",
+          "asignaturas": [
+            {
+              "codigo": "13019",
+              "nombre": "Administración de Proyectos",
+              "carga_horaria_semanal": 5,
+              "correlativas": "13015"
+            },
+            {
+              "codigo": "13020",
+              "nombre": "Lenguajes Formales y Autómatas",
+              "carga_horaria_semanal": 6,
+              "correlativas": "13004"
+            },
+            {
+              "codigo": "13021",
+              "nombre": "Programación en Tiempo Real",
+              "carga_horaria_semanal": 5,
+              "correlativas": "13004"
+            },
+            {
+              "codigo": "13031",
+              "nombre": "Optativa I",
+              "carga_horaria_semanal": 4,
+              "correlativas": null
+            },
+            {
+              "codigo": "C1030",
+              "nombre": "Ingeniería Ambiental",
+              "carga_horaria_semanal": 5,
+              "correlativas": "CI011"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "anio": "Quinto Año",
+      "cuatrimestres": [
+        {
+          "periodo": "1er. Cuatrimestre",
+          "asignaturas": [
+            {
+              "codigo": "13023",
+              "nombre": "Sistemas y Organizaciones",
+              "carga_horaria_semanal": 6,
+              "correlativas": "13005-13009"
+            },
+            {
+              "codigo": "13027",
+              "nombre": "Legislación y Ejercicio Profesional de la Informática",
+              "carga_horaria_semanal": 4,
+              "correlativas": null
+            },
+            {
+              "codigo": "13032",
+              "nombre": "Optativa II",
+              "carga_horaria_semanal": 4,
+              "correlativas": null
+            },
+            {
+              "codigo": "13033",
+              "nombre": "Optativa III",
+              "carga_horaria_semanal": 4,
+              "correlativas": null
+            },
+            {
+              "codigo": "C1031",
+              "nombre": "Gestión de Recursos Humanos",
+              "carga_horaria_semanal": 5,
+              "correlativas": "13009"
+            }
+          ]
+        },
+        {
+          "periodo": "2do. Cuatrimestre",
+          "asignaturas": [
+            {
+              "codigo": "C1035",
+              "nombre": "Gestión de la Calidad, Higiene y Seguridad",
+              "carga_horaria_semanal": 4,
+              "correlativas": "13011"
+            },
+            {
+              "codigo": "13028",
+              "nombre": "Economía",
+              "carga_horaria_semanal": 5,
+              "correlativas": "13019"
+            },
+            {
+              "codigo": "13029",
+              "nombre": "Práctica Profesional Supervisada",
+              "carga_horaria_semanal": 13,
+              "correlativas": "13019"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "materia_extracurricular": [
+    {
+      "codigo": "IG001",
+      "nombre": "Inglés",
+      "carga_horaria_semanal": 3,
+      "obligatoria": true
+    }
+  ],
+  "materias_optativas_disponibles": [
+    {
+      "codigo": "01001",
+      "nombre": "Gobierno de IT y Auditoría de SI",
+      "carga_horaria_semanal": 4
+    },
+    {
+      "codigo": "01008",
+      "nombre": "Datawarehouse y BussinessIntelligence",
+      "carga_horaria_semanal": 4
+    },
+    {
+      "codigo": "Ol002",
+      "nombre": "Gobierno Electrónico",
+      "carga_horaria_semanal": 4
+    },
+    {
+      "codigo": "O1037",
+      "nombre": "Aplicación Java sobre Web",
+      "carga_horaria_semanal": 4
+    },
+    {
+      "codigo": "01009",
+      "nombre": "Bioinformática",
+      "carga_horaria_semanal": 4
+    },
+    {
+      "codigo": "O1038",
+      "nombre": "Sistemas Distribuidos",
+      "carga_horaria_semanal": 4
+    },
+    {
+      "codigo": "O1039",
+      "nombre": "Tráfico en Redes",
+      "carga_horaria_semanal": 4
+    },
+    {
+      "codigo": "CI023",
+      "nombre": "Historia de la Ingeniería y la Tecnología",
+      "carga_horaria_semanal": 4
+    }
+  ]
+}

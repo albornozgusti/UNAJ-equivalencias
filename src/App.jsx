@@ -1,35 +1,76 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useMemo } from "react";
+import "./App.css";
+import Item from "./components/Item.jsx";
+import equivalencias from "./data/equivalencias.json";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { nuevo_plan, plan_2014 } = equivalencias;
+  const [plan2014List, setPlan2014List] = useState(
+    plan_2014.map((item) => ({ ...item, checked: false })),
+  );
+
+  // Obtener IDs de plan 2014 marcados
+  const checkedPlan2014Ids = useMemo(() => {
+    return plan2014List
+      .filter((item) => item.checked)
+      .map((item) => item.codigo);
+  }, [plan2014List]);
+
+  // Filtrar nuevo_plan para mostrar solo equivalencias de códigos marcados
+  const nuevoPlanList = useMemo(() => {
+    return nuevo_plan.filter((item) =>
+      checkedPlan2014Ids.includes(item.codigo),
+    );
+  }, [checkedPlan2014Ids]);
+
+  const handleCheckChange = (id) => {
+    setPlan2014List((prevList) =>
+      prevList.map((item) =>
+        item.id === id ? { ...item, checked: !item.checked } : item,
+      ),
+    );
+  };
 
   return (
-    <>
+    <div className="App">
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h2>Plan 2014 (Selecciona asignaturas)</h2>
+        {plan2014List.map((item) => (
+          <div key={item.id} style={{ marginBottom: "8px" }}>
+            <label>
+              <input
+                type="checkbox"
+                checked={item.checked}
+                onChange={() => handleCheckChange(item.id)}
+              />
+              <Item asignatura={item.asignatura} />
+            </label>
+          </div>
+        ))}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div>
+        <h2>Nuevo Plan (Equivalencias)</h2>
+        {nuevo_plan.length > 0 ? (
+          nuevo_plan.map((item) => {
+            const isChecked = plan2014List.some(
+              (p14Item) => p14Item.codigo === item.codigo && p14Item.checked,
+            );
+            return (
+              <div key={item.id} style={{ marginBottom: "8px" }}>
+                <Item
+                  asignatura={item.asignatura}
+                  estado={item.estado_equivalencia}
+                  strikethrough={isChecked}
+                />
+              </div>
+            );
+          })
+        ) : (
+          <p>No hay items disponibles</p>
+        )}
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
