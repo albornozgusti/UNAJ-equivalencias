@@ -73,7 +73,9 @@ function App() {
   const totalTituloIntermedio = nuevo_plan.reduce(
     (acc, year) =>
       acc +
-      year.asignaturas.filter((a) => a.titulo_intermedio === "true" || a.titulo_intermedio === true).length,
+      year.asignaturas.filter(
+        (a) => a.titulo_intermedio === "true" || a.titulo_intermedio === true,
+      ).length,
     0,
   );
 
@@ -81,7 +83,11 @@ function App() {
     return (
       acc +
       year.asignaturas.filter((item) => {
-        if (item.titulo_intermedio !== "true" && item.titulo_intermedio !== true) return false;
+        if (
+          item.titulo_intermedio !== "true" &&
+          item.titulo_intermedio !== true
+        )
+          return false;
         const equivalenciasCodeigos = item.equivalencias_codigos || [];
         if (equivalenciasCodeigos.length > 0) {
           return equivalenciasCodeigos.every((codigo) =>
@@ -94,8 +100,7 @@ function App() {
         } else if (item.codigo) {
           return plan2014List.some((p14Year) =>
             p14Year.asignaturas.some(
-              (p14Item) =>
-                p14Item.codigo === item.codigo && p14Item.checked,
+              (p14Item) => p14Item.codigo === item.codigo && p14Item.checked,
             ),
           );
         }
@@ -104,10 +109,18 @@ function App() {
     );
   }, 0);
 
-  const tituloIntermedioCompleted = totalTituloIntermedio > 0 && totalTituloIntermedio === checkedTituloIntermedio;
+  const tituloIntermedioCompleted =
+    totalTituloIntermedio > 0 &&
+    totalTituloIntermedio === checkedTituloIntermedio;
 
   return (
     <div className="App">
+      <span>
+        ⚠️ Descargo de responsabilidad: Este proyecto es de desarrollo personal
+        y puede contener errores, inconsistencias o información desactualizada.
+        No debe ser utilizado como fuente de verdad o referencia oficial. Por
+        favor, verifica siempre con las fuentes oficiales correspondientes.
+      </span>
       <div>
         <h2>Plan 2014 (Selecciona asignaturas)</h2>
         <div className="list-content">
