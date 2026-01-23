@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import "./App.css";
 import Item from "./components/Item.jsx";
 import equivalencias from "./data/equivalencias.json";
@@ -6,28 +6,20 @@ import equivalencias from "./data/equivalencias.json";
 function App() {
   const { nuevo_plan, plan_2014 } = equivalencias;
   const [plan2014List, setPlan2014List] = useState(
-    plan_2014.map((item) => ({ ...item, checked: false })),
+    plan_2014.map((year) => ({
+      ...year,
+      asignaturas: year.asignaturas.map((asig) => ({ ...asig, checked: false })),
+    })),
   );
-
-  // Obtener IDs de plan 2014 marcados
-  const checkedPlan2014Ids = useMemo(() => {
-    return plan2014List
-      .filter((item) => item.checked)
-      .map((item) => item.codigo);
-  }, [plan2014List]);
-
-  // Filtrar nuevo_plan para mostrar solo equivalencias de códigos marcados
-  const nuevoPlanList = useMemo(() => {
-    return nuevo_plan.filter((item) =>
-      checkedPlan2014Ids.includes(item.codigo),
-    );
-  }, [checkedPlan2014Ids]);
 
   const handleCheckChange = (id) => {
     setPlan2014List((prevList) =>
-      prevList.map((item) =>
-        item.id === id ? { ...item, checked: !item.checked } : item,
-      ),
+      prevList.map((year) => ({
+        ...year,
+        asignaturas: year.asignaturas.map((asig) =>
+          asig.id === id ? { ...asig, checked: !asig.checked } : asig,
+        ),
+      })),
     );
   };
 
@@ -36,35 +28,52 @@ function App() {
       <div>
         <h2>Plan 2014 (Selecciona asignaturas)</h2>
         {plan2014List.map((item) => (
-          <div key={item.id} style={{ marginBottom: "8px" }}>
-            <label>
-              <input
-                type="checkbox"
-                checked={item.checked}
-                onChange={() => handleCheckChange(item.id)}
-              />
-              <Item asignatura={item.asignatura} />
-            </label>
-          </div>
+          <>
+            <h3>{item.anio}</h3>
+            {item.asignaturas.map((asig) => (
+              <div key={asig.id} style={{ marginBottom: "8px" }}>
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={asig.checked}
+                    onChange={() => handleCheckChange(asig.id)}
+                  />
+                  <Item asignatura={asig.asignatura} />
+                </label>
+              </div>
+            ))}
+          </>
         ))}
       </div>
       <div>
         <h2>Nuevo Plan (Equivalencias)</h2>
         {nuevo_plan.length > 0 ? (
-          nuevo_plan.map((item) => {
-            const isChecked = plan2014List.some(
-              (p14Item) => p14Item.codigo === item.codigo && p14Item.checked,
-            );
-            return (
-              <div key={item.id} style={{ marginBottom: "8px" }}>
-                <Item
-                  asignatura={item.asignatura}
-                  estado={item.estado_equivalencia}
-                  strikethrough={isChecked}
-                />
-              </div>
-            );
-          })
+          nuevo_plan.map((year) => (
+            <>
+              <h3>{year.anio}</h3>
+              {year.asignaturas.map((item) => {
+                const isChecked =
+                  item.equivalencias_codigos.length > 0 &&
+                  item.equivalencias_codigos.every((codigo) =>
+                    plan2014List.some((p14Year) =>
+                      p14Year.asignaturas.some(
+                        (p14Item) =>
+                          p14Item.codigo === codigo && p14Item.checked,
+                      ),
+                    ),
+                  );
+                return (
+                  <div key={item.id} style={{ marginBottom: "8px" }}>
+                    <Item
+                      asignatura={item.asignatura}
+                      estado={item.estado_equivalencia}
+                      strikethrough={isChecked}
+                    />
+                  </div>
+                );
+              })}
+            </>
+          ))
         ) : (
           <p>No hay items disponibles</p>
         )}
