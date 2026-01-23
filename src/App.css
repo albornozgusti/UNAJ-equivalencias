@@ -20,6 +20,45 @@
   background: #1a1a1a;
   overflow-y: auto;
   max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.list-counter {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  text-align: center;
+}
+
+.titulo-intermedio-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #2d5016;
+  border: 1px solid #4a7c2f;
+  border-radius: 4px;
+  color: #a8d5a8;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .App {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  
+  .App > div {
+    max-height: none;
+    min-height: 400px;
+  }
 }
 
 .App h2 {
