@@ -9,7 +9,8 @@
           "asignatura": "Problemas de Historia Argentina",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["C1004"]
+          "equivalencias_codigos": ["C1004"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_002",
@@ -17,7 +18,8 @@
           "asignatura": "Conceptos de Programación",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["C1010"]
+          "equivalencias_codigos": ["C1010"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_003",
@@ -25,7 +27,8 @@
           "asignatura": "Introducción a la Matemática",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["CI002"]
+          "equivalencias_codigos": ["CI002"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_004",
@@ -33,7 +36,8 @@
           "asignatura": "Taller de Lectura y Escritura",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["C1001"]
+          "equivalencias_codigos": ["C1001"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_005",
@@ -41,7 +45,8 @@
           "asignatura": "Programación con Objetos",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13001"]
+          "equivalencias_codigos": ["13001"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_006",
@@ -49,7 +54,8 @@
           "asignatura": "Prácticas Culturales",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["C1003"]
+          "equivalencias_codigos": ["C1003"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_007",
@@ -57,7 +63,8 @@
           "asignatura": "Álgebra I",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["CI012"]
+          "equivalencias_codigos": ["CI012"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_008",
@@ -65,7 +72,8 @@
           "asignatura": "Matemática Discreta",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13002", "13004", "13005"]
+          "equivalencias_codigos": ["13002", "13004", "13005"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_009",
@@ -73,7 +81,8 @@
           "asignatura": "Taller de Ingeniería",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["CI021"]
+          "equivalencias_codigos": ["CI021"],
+          "titulo_intermedio": "true"
         }
       ]
     },
@@ -86,7 +95,8 @@
           "asignatura": "Álgebra II",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["CI022"]
+          "equivalencias_codigos": ["CI022"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_011",
@@ -94,7 +104,8 @@
           "asignatura": "Algoritmos y Estructuras de Datos",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13004"]
+          "equivalencias_codigos": ["13004"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_012",
@@ -102,7 +113,8 @@
           "asignatura": "Organización de Computadoras",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13002"]
+          "equivalencias_codigos": ["13002"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_013",
@@ -110,7 +122,8 @@
           "asignatura": "Cálculo I",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["CI012"]
+          "equivalencias_codigos": ["CI012"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_014",
@@ -118,7 +131,8 @@
           "asignatura": "Organizaciones y Sistemas",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13023"]
+          "equivalencias_codigos": ["13023"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_015",
@@ -126,7 +140,8 @@
           "asignatura": "Probabilidad",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["C1029"]
+          "equivalencias_codigos": ["C1029"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_016",
@@ -134,7 +149,8 @@
           "asignatura": "Cálculo II",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["CI022"]
+          "equivalencias_codigos": ["CI022"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_017",
@@ -142,7 +158,8 @@
           "asignatura": "Complejidad Temporal y Patrones de Diseño de Software",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13004", "13007"]
+          "equivalencias_codigos": ["13004", "13007"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_018",
@@ -150,7 +167,8 @@
           "asignatura": "Arquitectura de Computadoras",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13002"]
+          "equivalencias_codigos": ["13002"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_019",
@@ -158,7 +176,8 @@
           "asignatura": "Fundamentos de Base de Datos",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13005"]
+          "equivalencias_codigos": ["13005"],
+          "titulo_intermedio": "true"
         }
       ]
     },
@@ -171,7 +190,8 @@
           "asignatura": "Estadística y Análisis de Datos",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "Requiere seminario complementario",
-          "equivalencias_codigos": ["C1029"]
+          "equivalencias_codigos": ["C1029"],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_021",
@@ -179,7 +199,8 @@
           "asignatura": "Física I",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["CI025"]
+          "equivalencias_codigos": ["CI025"],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_022",
@@ -187,7 +208,8 @@
           "asignatura": "Fundamentos de Sistemas Operativos",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13003"]
+          "equivalencias_codigos": ["13003"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_023",
@@ -195,7 +217,8 @@
           "asignatura": "Autómatas y Lenguajes",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13020"]
+          "equivalencias_codigos": ["13020"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_024",
@@ -203,7 +226,8 @@
           "asignatura": "Ingeniería de Software",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13009"]
+          "equivalencias_codigos": ["13009"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_025",
@@ -211,7 +235,8 @@
           "asignatura": "Física II",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["CI027"]
+          "equivalencias_codigos": ["CI027"],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_026",
@@ -219,7 +244,8 @@
           "asignatura": "Comunicaciones de Datos",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13008"]
+          "equivalencias_codigos": ["13008"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_027",
@@ -227,7 +253,8 @@
           "asignatura": "Proyecto Informático",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13011"]
+          "equivalencias_codigos": ["13011"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_028",
@@ -235,7 +262,8 @@
           "asignatura": "Economía General",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13028"]
+          "equivalencias_codigos": ["13028"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_029",
@@ -243,7 +271,8 @@
           "asignatura": "Base de Datos Avanzados",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13014"]
+          "equivalencias_codigos": ["13014"],
+          "titulo_intermedio": "true"
         }
       ]
     },
@@ -256,7 +285,8 @@
           "asignatura": "Programación Concurrente y Paralela",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_031",
@@ -264,7 +294,8 @@
           "asignatura": "Redes de Datos I",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13006"]
+          "equivalencias_codigos": ["13006"],
+          "titulo_intermedio": "true"
         },
         {
           "id": "np_032",
@@ -272,7 +303,8 @@
           "asignatura": "Fundamentos de Aplicaciones Móviles",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13018"]
+          "equivalencias_codigos": ["13018"],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_033",
@@ -280,7 +312,8 @@
           "asignatura": "Administración de Sistemas de Información",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_034",
@@ -288,7 +321,8 @@
           "asignatura": "Ingeniería, Innovación y Tecnología",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["C1023"]
+          "equivalencias_codigos": ["C1023"],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_035",
@@ -296,7 +330,8 @@
           "asignatura": "Seguridad en los Sistemas de Información",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13013"]
+          "equivalencias_codigos": ["13013"],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_036",
@@ -304,7 +339,8 @@
           "asignatura": "Redes de Datos II",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13010"]
+          "equivalencias_codigos": ["13010"],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_037",
@@ -312,7 +348,8 @@
           "asignatura": "Calidad de Software",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13015"]
+          "equivalencias_codigos": ["13015"],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_038",
@@ -320,7 +357,8 @@
           "asignatura": "Conceptos Avanzados de Sistemas Operativos",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13016"]
+          "equivalencias_codigos": ["13016"],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_039",
@@ -328,7 +366,8 @@
           "asignatura": "Ciencia de Datos e Inteligencia Artificial",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         }
       ]
     },
@@ -341,7 +380,8 @@
           "asignatura": "Gestión de Proyectos",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13019"]
+          "equivalencias_codigos": ["13019"],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_041",
@@ -349,7 +389,15 @@
           "asignatura": "Sistemas de Tiempo Real",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13021"]
+          "equivalencias_codigos": ["13021"],
+          "titulo_intermedio": "false"
+        },
+        {
+          "id": "np_066",
+          "codigo": "13031",
+          "asignatura": "Optativa I",
+          "cuatrimestre": "2° Cuatrimestre",
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_042",
@@ -357,7 +405,8 @@
           "asignatura": "Gestión Legal y Profesional en Informática",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13027"]
+          "equivalencias_codigos": ["13027"],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_043",
@@ -365,7 +414,8 @@
           "asignatura": "Inglés Aplicado a la Ingeniería I",
           "cuatrimestre": "1° Cuatrimestre",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_044",
@@ -373,7 +423,8 @@
           "asignatura": "Inglés Aplicado a la Ingeniería II",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_045",
@@ -381,7 +432,8 @@
           "asignatura": "Proyecto Integrador",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_046",
@@ -389,7 +441,8 @@
           "asignatura": "Conceptos de Bioinformática",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["01009"]
+          "equivalencias_codigos": ["01009"],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_047",
@@ -397,7 +450,15 @@
           "asignatura": "Cloud Computing y Big Data",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
+        },
+        {
+          "id": "np_067",
+          "codigo": "13032",
+          "asignatura": "Optativa II",
+          "cuatrimestre": "2° Cuatrimestre",
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_048",
@@ -405,7 +466,8 @@
           "asignatura": "Práctica Profesional Supervisada",
           "cuatrimestre": "2° Cuatrimestre",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["13029"]
+          "equivalencias_codigos": ["13029"],
+          "titulo_intermedio": "false"
         }
       ]
     },
@@ -418,7 +480,8 @@
           "asignatura": "Inglés",
           "cuatrimestre": "Extracurricular",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["IG001"]
+          "equivalencias_codigos": ["IG001"],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_050",
@@ -426,7 +489,8 @@
           "asignatura": "Sistemas Distribuidos",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["01038"]
+          "equivalencias_codigos": ["01038"],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_051",
@@ -434,7 +498,8 @@
           "asignatura": "Integración de Objetos en Sistemas de IoT",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_052",
@@ -442,7 +507,8 @@
           "asignatura": "Arquitectura de las Plataformas IoT",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_053",
@@ -450,7 +516,8 @@
           "asignatura": "Smart IoT",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_054",
@@ -458,7 +525,8 @@
           "asignatura": "Gestión de Base de Datos",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_055",
@@ -466,7 +534,8 @@
           "asignatura": "Tráfico en Redes de Datos",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "EQUIVALENTES",
-          "equivalencias_codigos": ["01039"]
+          "equivalencias_codigos": ["01039"],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_056",
@@ -474,7 +543,8 @@
           "asignatura": "Diseño de Redes Corporativas",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_057",
@@ -482,7 +552,8 @@
           "asignatura": "Modelado y Simulación",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_058",
@@ -490,7 +561,8 @@
           "asignatura": "Internet de las Cosas",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_059",
@@ -498,7 +570,8 @@
           "asignatura": "Diseño UI/UX",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_060",
@@ -506,7 +579,8 @@
           "asignatura": "Desarrollo de Aplicaciones Frontend",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_061",
@@ -514,7 +588,8 @@
           "asignatura": "Aprendizaje Automático",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_062",
@@ -522,7 +597,8 @@
           "asignatura": "Introducción al Aprendizaje Profundo",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_063",
@@ -530,7 +606,8 @@
           "asignatura": "Introducción a la Programación de Videojuegos",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_064",
@@ -538,7 +615,8 @@
           "asignatura": "Ciberseguridad",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         },
         {
           "id": "np_065",
@@ -546,7 +624,8 @@
           "asignatura": "Procesamiento de Imágenes y Modelado 3D",
           "cuatrimestre": "Optativa",
           "estado_equivalencia": "SIN EQUIVALENCIA",
-          "equivalencias_codigos": []
+          "equivalencias_codigos": [],
+          "titulo_intermedio": "false"
         }
       ]
     }
@@ -854,7 +933,7 @@
       ]
     },
     {
-      "anio": "Materias Optativas y Extracurriculares",
+      "anio": "Materias Optativas y Extracurriculares (Si marcan una optativa, debe marcar también la optativa correspodiente al año",
       "asignaturas": [
         {
           "id": "p14_047",
