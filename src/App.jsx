@@ -114,98 +114,100 @@ function App() {
     totalTituloIntermedio === checkedTituloIntermedio;
 
   return (
-    <div className="App">
+    <>
       <span>
         ⚠️ Descargo de responsabilidad: Este proyecto es de desarrollo personal
         y puede contener errores, inconsistencias o información desactualizada.
         No debe ser utilizado como fuente de verdad o referencia oficial. Por
         favor, verifica siempre con las fuentes oficiales correspondientes.
       </span>
-      <div>
-        <h2>Plan 2014 (Selecciona asignaturas)</h2>
-        <div className="list-content">
-          {plan2014List.map((item) => (
-            <div key={item.anio}>
-              <h3>{item.anio}</h3>
-              {item.asignaturas.map((asig) => (
-                <div key={asig.id} style={{ marginBottom: "8px" }}>
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={asig.checked}
-                      onChange={() => handleCheckChange(asig.id)}
-                    />
-                    <Item asignatura={asig.asignatura} />
-                  </label>
-                </div>
-              ))}
-            </div>
-          ))}
+      <div className="App">
+        <div>
+          <h2>Plan 2014 (Selecciona asignaturas)</h2>
+          <div className="list-content">
+            {plan2014List.map((item) => (
+              <div key={item.anio}>
+                <h3>{item.anio}</h3>
+                {item.asignaturas.map((asig) => (
+                  <div key={asig.id} style={{ marginBottom: "8px" }}>
+                    <label>
+                      <input
+                        type="checkbox"
+                        checked={asig.checked}
+                        onChange={() => handleCheckChange(asig.id)}
+                      />
+                      <Item asignatura={asig.asignatura} />
+                    </label>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+          <div className="list-counter">
+            Materias restantes (plan 2014): <strong>{remainingPlan2014}</strong>{" "}
+            de {totalPlan2014}
+          </div>
         </div>
-        <div className="list-counter">
-          Materias restantes (plan 2014): <strong>{remainingPlan2014}</strong>{" "}
-          de {totalPlan2014}
-        </div>
-      </div>
-      <div>
-        <h2>Nuevo Plan (Equivalencias)</h2>
-        <div className="list-content">
-          {nuevo_plan.length > 0 ? (
-            nuevo_plan.map((year) => (
-              <div key={year.anio}>
-                <h3>{year.anio}</h3>
-                {year.asignaturas.map((item) => {
-                  const equivalenciasCodeigos =
-                    item.equivalencias_codigos || [];
-                  let isChecked = false;
+        <div>
+          <h2>Nuevo Plan (Equivalencias)</h2>
+          <div className="list-content">
+            {nuevo_plan.length > 0 ? (
+              nuevo_plan.map((year) => (
+                <div key={year.anio}>
+                  <h3>{year.anio}</h3>
+                  {year.asignaturas.map((item) => {
+                    const equivalenciasCodeigos =
+                      item.equivalencias_codigos || [];
+                    let isChecked = false;
 
-                  if (equivalenciasCodeigos.length > 0) {
-                    // Para materias con equivalencias, verificar si todos los códigos están seleccionados
-                    isChecked = equivalenciasCodeigos.every((codigo) =>
-                      plan2014List.some((p14Year) =>
+                    if (equivalenciasCodeigos.length > 0) {
+                      // Para materias con equivalencias, verificar si todos los códigos están seleccionados
+                      isChecked = equivalenciasCodeigos.every((codigo) =>
+                        plan2014List.some((p14Year) =>
+                          p14Year.asignaturas.some(
+                            (p14Item) =>
+                              p14Item.codigo === codigo && p14Item.checked,
+                          ),
+                        ),
+                      );
+                    } else if (item.codigo) {
+                      // Para optativas sin equivalencias, verificar si el código coincide directamente
+                      isChecked = plan2014List.some((p14Year) =>
                         p14Year.asignaturas.some(
                           (p14Item) =>
-                            p14Item.codigo === codigo && p14Item.checked,
+                            p14Item.codigo === item.codigo && p14Item.checked,
                         ),
-                      ),
-                    );
-                  } else if (item.codigo) {
-                    // Para optativas sin equivalencias, verificar si el código coincide directamente
-                    isChecked = plan2014List.some((p14Year) =>
-                      p14Year.asignaturas.some(
-                        (p14Item) =>
-                          p14Item.codigo === item.codigo && p14Item.checked,
-                      ),
-                    );
-                  }
+                      );
+                    }
 
-                  return (
-                    <div key={item.id} style={{ marginBottom: "8px" }}>
-                      <Item
-                        asignatura={item.asignatura}
-                        estado={item.estado_equivalencia}
-                        strikethrough={isChecked}
-                      />
-                    </div>
-                  );
-                })}
-              </div>
-            ))
-          ) : (
-            <p>No hay items disponibles</p>
+                    return (
+                      <div key={item.id} style={{ marginBottom: "8px" }}>
+                        <Item
+                          asignatura={item.asignatura}
+                          estado={item.estado_equivalencia}
+                          strikethrough={isChecked}
+                        />
+                      </div>
+                    );
+                  })}
+                </div>
+              ))
+            ) : (
+              <p>No hay items disponibles</p>
+            )}
+          </div>
+          <div className="list-counter">
+            Materias restantes (Nuevo plan):{" "}
+            <strong>{remainingNuevoPlan}</strong> de {totalNuevoPlan}
+          </div>
+          {tituloIntermedioCompleted && (
+            <div className="titulo-intermedio-message">
+              ✓ Obtención de título intermedio
+            </div>
           )}
         </div>
-        <div className="list-counter">
-          Materias restantes (Nuevo plan): <strong>{remainingNuevoPlan}</strong>{" "}
-          de {totalNuevoPlan}
-        </div>
-        {tituloIntermedioCompleted && (
-          <div className="titulo-intermedio-message">
-            ✓ Obtención de título intermedio
-          </div>
-        )}
       </div>
-    </div>
+    </>
   );
 }
 
