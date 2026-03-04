@@ -3,17 +3,18 @@ import "./App.css";
 import Item from "./components/Item.jsx";
 import equivalencias from "./data/equivalencias.json";
 
-function App() {
-  const { nuevo_plan, plan_2014 } = equivalencias;
-  const [plan2014List, setPlan2014List] = useState(
-    plan_2014.map((year) => ({
+const { nuevo_plan, plan_2014 } = equivalencias;
+const plan2014InitialConfig = plan_2014.map((year) => ({
       ...year,
       asignaturas: year.asignaturas.map((asig) => ({
         ...asig,
         checked: false,
       })),
-    })),
-  );
+    }));
+
+function App() {
+
+  const [plan2014List, setPlan2014List] = useState(plan2014InitialConfig);
 
   const handleCheckChange = (id) => {
     setPlan2014List((prevList) =>
@@ -28,25 +29,15 @@ function App() {
 
   const totalPlan2014 = plan2014List.reduce(
     (acc, year) =>
-      acc +
-      year.asignaturas.filter((a) => a.cuatrimestre !== "Optativa").length,
-    0,
-  );
+      acc + year.asignaturas.filter((a) => a.cuatrimestre !== "Optativa").length, 0);
   const checkedPlan2014 = plan2014List.reduce(
     (acc, year) =>
-      acc +
-      year.asignaturas.filter((a) => a.cuatrimestre !== "Optativa" && a.checked)
-        .length,
-    0,
-  );
+      acc + year.asignaturas.filter((a) => a.cuatrimestre !== "Optativa" && a.checked).length, 0);
   const remainingPlan2014 = totalPlan2014 - checkedPlan2014;
 
   const totalNuevoPlan = nuevo_plan.reduce(
     (acc, year) =>
-      acc +
-      year.asignaturas.filter((a) => a.cuatrimestre !== "Optativa").length,
-    0,
-  );
+      acc + year.asignaturas.filter((a) => a.cuatrimestre !== "Optativa").length, 0);
 
   const checkedNuevoPlan = nuevo_plan.reduce((acc, year) => {
     return (
@@ -73,11 +64,7 @@ function App() {
   const totalTituloIntermedio = nuevo_plan.reduce(
     (acc, year) =>
       acc +
-      year.asignaturas.filter(
-        (a) => a.titulo_intermedio === "true" || a.titulo_intermedio === true,
-      ).length,
-    0,
-  );
+      year.asignaturas.filter( (a)  => a.titulo_intermedio === "true" || a.titulo_intermedio === true).length, 0);
 
   const checkedTituloIntermedio = nuevo_plan.reduce((acc, year) => {
     return (
@@ -88,9 +75,9 @@ function App() {
           item.titulo_intermedio !== true
         )
           return false;
-        const equivalenciasCodeigos = item.equivalencias_codigos || [];
-        if (equivalenciasCodeigos.length > 0) {
-          return equivalenciasCodeigos.every((codigo) =>
+        const equivalenciasCode = item.equivalencias_codigos || [];
+        if (equivalenciasCode.length > 0) {
+          return equivalenciasCode.every((codigo) =>
             plan2014List.some((p14Year) =>
               p14Year.asignaturas.some(
                 (p14Item) => p14Item.codigo === codigo && p14Item.checked,
@@ -108,6 +95,8 @@ function App() {
       }).length
     );
   }, 0);
+
+  const remainingTituloIntermedio = totalTituloIntermedio - checkedTituloIntermedio;
 
   const tituloIntermedioCompleted =
     totalTituloIntermedio > 0 &&
@@ -199,6 +188,10 @@ function App() {
           <div className="list-counter">
             Materias restantes (Nuevo plan):{" "}
             <strong>{remainingNuevoPlan}</strong> de {totalNuevoPlan}
+          </div>
+          <div className="list-counter">
+            Materias restantes (Título Intermedio):{" "}
+            <strong>{remainingTituloIntermedio}</strong> de {totalTituloIntermedio}
           </div>
           {tituloIntermedioCompleted && (
             <div className="titulo-intermedio-message">
